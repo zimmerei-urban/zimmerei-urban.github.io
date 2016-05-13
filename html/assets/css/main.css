@@ -8,7 +8,6 @@ body {
 
 #wrapper {
 	max-width: 800px;
-	min-width: 400px;
 	margin: 0 auto;
 }
 
@@ -69,6 +68,10 @@ section h3 {
 	border-bottom: 2px #752239 solid;
 }
 
+section.text ul {
+	padding: 0.4em 0 0 0;
+}
+
 section.text p {
 	display: block;
 	padding: 0.4em 1em 0 1em;
@@ -95,8 +98,12 @@ section.picture span {
 	}
 	
 	section h3, section p, section ul {
-		width: 60%;
+		width: 80%;
 		margin: 0 auto;
+	}
+	
+	section.text.full p {
+		width: 90%;
 	}
 }
 
@@ -113,7 +120,23 @@ ul {
 }
 
 li {
-	margin-left: 2em;
+	margin-left: 2.5em;
 	padding-top: 0.4em;
 }
 
+/* links */
+a, a:visited {
+	color: blue;
+	text-decoration: underline;
+}
+
+a.tel {
+	color: #000000;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 736px) {
+a.tel {
+	color: blue;
+	text-decoration: underline;
+}
