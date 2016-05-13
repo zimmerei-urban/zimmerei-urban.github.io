@@ -1,0 +1,82 @@
+/**
+* Zimmerei Urban - Stylesheet
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+
+	color: #000000;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+}
+
+.wrapper {
+	background: url('./bilder/bg.gif') #FFFFFF;
+}
+
+img {
+	border: 0;
+}
+
+p {
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+h1 {
+	display: block;
+	padding: 20px 20px 0 20px;
+	color: #ae3b3b;
+	font-family: Helvetica;
+	font-size: 3.8em;
+	font-weight: bold;
+	text-align: center;
+}
+
+span.head {
+	display: block;
+	padding: 5px 0 10px 0;
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: center;
+}
+
+h1 span {
+	font-size: 1.6em;
+}
+
+/* list */
+ul {
+	font-size: 1.4em;
+}
+
+li {
+	margin-left: 30px;
+	padding-top: 4px;
+}
+
+/* table */
+table {
+	width: 100%;
+}
+
+td {
+	padding: 3px;
+	border: 1px solid #999999;
+	vertical-align: top;
+}
+
+/* footer */
+.footer {
+	margin-top: 20px;
+	text-align: center;
+}
