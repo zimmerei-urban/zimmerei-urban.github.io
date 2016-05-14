@@ -55,8 +55,14 @@ section, aside {
 	padding-bottom: 1em;
 }
 
+aside {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
 section.full {
 	width: 100%;
+	padding-top: 1em;
 }
 
 section h3 {
@@ -85,6 +91,11 @@ aside  {
 	text-align: center;
 }
 
+aside.full {
+	width: 100%;
+	text-align: center;
+}
+
 aside span {
 	font-size: 10pt;
 }
@@ -107,7 +118,7 @@ aside span {
 
 footer {
 	clear: both;
-	margin: 1em 0;
+	padding: 1em 0;
 	font-size: 11pt;
 	text-align: center;
 }
