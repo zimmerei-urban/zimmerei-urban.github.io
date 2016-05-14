@@ -6,6 +6,10 @@ body {
 	font-size: 100%;
 }
 
+strong {
+	font-weight: bold;
+}
+
 #wrapper {
 	max-width: 800px;
 	margin: 0 auto;
@@ -43,22 +47,16 @@ h2 {
 	}
 }
 
-section {
+section, aside {
 	display: block;
 	float: left;
-	width: calc(50% - 2px);
+	width: 50%;
 	margin: 1em 0;
 	padding-bottom: 1em;
-	
-	/*border: 1px red dashed;*/
-}
-
-section.clear {
-	clear: left;
 }
 
 section.full {
-	width: calc(100% - 2px);
+	width: 100%;
 }
 
 section h3 {
@@ -68,31 +66,31 @@ section h3 {
 	border-bottom: 2px #752239 solid;
 }
 
-section.text ul {
+section ul {
 	padding: 0.4em 0 0 0;
 }
 
-section.text p {
+section p {
 	display: block;
 	padding: 0.4em 1em 0 1em;
 	font-size: 12pt;
 	line-height: 1.2em;
 }
 
-section.text.full p {
+section.full p {
 	text-align: center;
 }
 
-section.picture {
+aside  {
 	text-align: center;
 }
 
-section.picture span {
+aside span {
 	font-size: 10pt;
 }
 
 @media screen and (max-width: 736px) {
-	section {
+	section, aside  {
 		float: none;
 		width: 100%;
 	}
@@ -102,7 +100,7 @@ section.picture span {
 		margin: 0 auto;
 	}
 	
-	section.text.full p {
+	section.full p {
 		width: 90%;
 	}
 }
@@ -112,6 +110,27 @@ footer {
 	margin: 1em 0;
 	font-size: 11pt;
 	text-align: center;
+}
+
+/* disclaimer */
+section#disclaimer p {
+	text-align: left;
+}
+
+/* tables */
+table {
+	width: 100%;
+}
+
+td {
+	padding: 1em;
+	vertical-align: top;
+	line-height: 1.3em;
+}
+
+/* clear floats */
+.clear {
+	clear: left;
 }
 
 /* list */
@@ -136,7 +155,8 @@ a.tel {
 }
 
 @media screen and (max-width: 736px) {
-a.tel {
-	color: blue;
-	text-decoration: underline;
+	a.tel {
+		color: blue;
+		text-decoration: underline;
+	}
 }
